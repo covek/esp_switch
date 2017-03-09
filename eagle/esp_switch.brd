@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -39,7 +39,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -146,74 +146,6 @@
 <wire x1="0" y1="27" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
-<library name="con-jack">
-<description>&lt;b&gt;Jacks&lt;/b&gt;&lt;p&gt;
-Power Connectors&lt;br&gt;
-Phone Connectors&lt;br&gt;
-Cinch Connectors&lt;br&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SPC4078">
-<description>&lt;b&gt;DC POWER JACK 2.5mm&lt;/b&gt; Right Angle, Through Hole, Rated 5A at 16VDC, PC Terminals&lt;p&gt;
-Source: www.spctechnology.com .. 84N1162.pdf&lt;br&gt;
-Distributor: &lt;b&gt;Farnell (www.Farnell.de)&lt;/b&gt;&lt;br&gt;
-Created by Robert Siegler</description>
-<wire x1="-10.75" y1="-4.5" x2="-10.75" y2="-3.2" width="0.1" layer="21"/>
-<wire x1="-10.75" y1="-3.2" x2="-10.75" y2="3.2" width="0.1" layer="21"/>
-<wire x1="-10.75" y1="3.2" x2="-10.75" y2="4.5" width="0.1" layer="21"/>
-<wire x1="-7.25" y1="-4.5" x2="-7.25" y2="4" width="0.1" layer="21"/>
-<wire x1="-7.25" y1="4" x2="-7.25" y2="4.5" width="0.1" layer="21"/>
-<wire x1="-7.25" y1="-4" x2="1.25" y2="-4" width="0.1" layer="51"/>
-<wire x1="-7.25" y1="4" x2="1.25" y2="4" width="0.1" layer="21"/>
-<wire x1="1.25" y1="-4" x2="1.25" y2="4" width="0.1" layer="51"/>
-<wire x1="1.25" y1="-4.5" x2="1.25" y2="-4" width="0.1" layer="51"/>
-<wire x1="1.25" y1="4" x2="1.25" y2="4.5" width="0.1" layer="21"/>
-<wire x1="-10.75" y1="4.5" x2="1.25" y2="4.5" width="0.1" layer="21"/>
-<wire x1="-10.75" y1="-4.5" x2="1.25" y2="-4.5" width="0.1" layer="51"/>
-<wire x1="1.25" y1="-4" x2="2.75" y2="-4" width="0.1" layer="51"/>
-<wire x1="2.75" y1="-4" x2="3.25" y2="-4" width="0.1" layer="51"/>
-<wire x1="1.25" y1="4" x2="2.75" y2="4" width="0.1" layer="21"/>
-<wire x1="2.75" y1="4" x2="3.25" y2="4" width="0.1" layer="21"/>
-<wire x1="3.25" y1="-4" x2="3.25" y2="4" width="0.1" layer="51"/>
-<wire x1="2.75" y1="-4" x2="2.75" y2="4" width="0.1" layer="51"/>
-<wire x1="-10.75" y1="3.2" x2="-1.75" y2="3.2" width="0.1" layer="21" style="shortdash"/>
-<wire x1="-10.75" y1="-3.2" x2="-1.75" y2="-3.2" width="0.1" layer="21" style="shortdash"/>
-<wire x1="-1.75" y1="-3.2" x2="-1.75" y2="-1.25" width="0.1" layer="21" style="shortdash"/>
-<wire x1="-1.75" y1="-1.25" x2="-1.75" y2="1.25" width="0.1" layer="21" style="shortdash"/>
-<wire x1="-1.75" y1="1.25" x2="-1.75" y2="3.2" width="0.1" layer="21" style="shortdash"/>
-<wire x1="-8.75" y1="1.25" x2="-1.75" y2="1.25" width="0.1" layer="51" style="shortdash"/>
-<wire x1="-8.75" y1="-1.25" x2="-1.75" y2="-1.25" width="0.1" layer="51" style="shortdash"/>
-<wire x1="-8.75" y1="1.25" x2="-8.75" y2="-1.25" width="0.1" layer="21" curve="180"/>
-<wire x1="2.5" y1="1.75" x2="3.5" y2="1.75" width="0" layer="46"/>
-<wire x1="3.5" y1="1.75" x2="3.5" y2="-1.75" width="0" layer="46"/>
-<wire x1="3.5" y1="-1.75" x2="2.5" y2="-1.75" width="0" layer="46"/>
-<wire x1="2.5" y1="-1.75" x2="2.5" y2="1.75" width="0" layer="46"/>
-<wire x1="-3.4" y1="1.5" x2="-2.6" y2="1.5" width="0" layer="46"/>
-<wire x1="-2.6" y1="1.5" x2="-2.6" y2="-1.5" width="0" layer="46"/>
-<wire x1="-2.6" y1="-1.5" x2="-3.4" y2="-1.5" width="0" layer="46"/>
-<wire x1="-3.4" y1="-1.5" x2="-3.4" y2="1.5" width="0" layer="46"/>
-<wire x1="-1.5" y1="-4.4" x2="1.5" y2="-4.4" width="0" layer="46"/>
-<wire x1="1.5" y1="-4.4" x2="1.5" y2="-5.2" width="0" layer="46"/>
-<wire x1="1.5" y1="-5.2" x2="-1.5" y2="-5.2" width="0" layer="46"/>
-<wire x1="-1.5" y1="-5.2" x2="-1.5" y2="-4.4" width="0" layer="46"/>
-<wire x1="2.75" y1="2.35" x2="2.75" y2="4" width="0.1" layer="21"/>
-<wire x1="2.75" y1="-4" x2="2.75" y2="-2.35" width="0.1" layer="21"/>
-<wire x1="3.25" y1="-4" x2="3.25" y2="-2.35" width="0.1" layer="21"/>
-<wire x1="3.25" y1="2.35" x2="3.25" y2="4" width="0.1" layer="21"/>
-<wire x1="2.75" y1="-4" x2="3.25" y2="-4" width="0.1" layer="21"/>
-<wire x1="-10.75" y1="-4.5" x2="-2.56" y2="-4.5" width="0.1" layer="21"/>
-<wire x1="1.25" y1="-2.73" x2="1.25" y2="4" width="0.1" layer="21"/>
-<pad name="2" x="0" y="-4.8" drill="0.8" diameter="2.1844" shape="long"/>
-<pad name="1" x="-3" y="0" drill="0.8" diameter="2.1844" shape="long" rot="R90"/>
-<pad name="3" x="3" y="0" drill="1" diameter="2.1844" shape="long" rot="R90"/>
-<text x="-10.16" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-10.16" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<rectangle x1="-1.25" y1="-5.05" x2="1.25" y2="-4.55" layer="51"/>
-<rectangle x1="2.75" y1="-1.5" x2="3.25" y2="1.5" layer="51"/>
-<rectangle x1="-3.1" y1="-1.25" x2="-2.9" y2="1.25" layer="51"/>
-</package>
-</packages>
-</library>
 <library name="jumper">
 <description>&lt;b&gt;Jumpers&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -590,6 +522,113 @@ Source: http://eshop.phoenixcontact.com .. 1729131.pdf</description>
 </package>
 </packages>
 </library>
+<library name="Wurth_Elektronik_Electromechanic_DC_Power_Jack_Connectors_rev16a_covek">
+<description>&lt;BR&gt;Wurth Elektronik - DC Power Jack Connectors&lt;br&gt;&lt;Hr&gt;
+&lt;BR&gt;&lt;BR&gt; 
+&lt;TABLE BORDER=0 CELLSPACING=0 CELLPADDING=0&gt;
+&lt;TR&gt;   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;&lt;br&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;
+      -----&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt; &lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------------------------&lt;BR&gt;
+&lt;B&gt;&lt;I&gt;&lt;span style='font-size:26pt;
+  color:#FF6600;'&gt;WE &lt;/span&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;BR&gt;
+      ---------------------------&lt;BR&gt;&lt;b&gt;Würth Elektronik&lt;/b&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;br&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;
+      ----O--------&lt;BR&gt;
+      ---------O---&lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+   
+&lt;TD BGCOLOR="#cccccc" ALIGN=CENTER&gt;&lt;FONT FACE=ARIAL SIZE=3&gt;&lt;BR&gt;
+      &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;
+       &lt;BR&gt;&lt;BR&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+
+  &lt;TR&gt;
+    &lt;TD COLSPAN=7&gt;&amp;nbsp;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  
+&lt;/TABLE&gt;
+&lt;B&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;More than you expect&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;&lt;/B&gt;
+
+&lt;HR&gt;&lt;BR&gt;
+&lt;b&gt;Würth Elektronik eiSos GmbH &amp; Co. KG&lt;/b&gt;&lt;br&gt;
+EMC &amp; Inductive Solutions&lt;br&gt;
+
+Max-Eyth-Str.1&lt;br&gt;
+D-74638 Waldenburg&lt;br&gt;
+&lt;br&gt;
+Tel: +49 (0)7942-945-0&lt;br&gt;
+Fax:+49 (0)7942-945-405&lt;br&gt;
+&lt;br&gt;
+&lt;a href="http://www.we-online.com/eagle"&gt;http://www.we-online.com/eagle &lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:libraries@we-online.com"&gt;libraries@we-online.com&lt;/a&gt; &lt;BR&gt;&lt;BR&gt;
+&lt;br&gt;&lt;HR&gt;&lt;BR&gt;
+Neither CadSoft nor WE-eiSos does warrant that this library is error-free or &lt;br&gt;
+that it meets your specific requirements.&lt;br&gt;&lt;BR&gt;
+Please contact us for more information.&lt;br&gt;&lt;BR&gt;&lt;br&gt;
+&lt;hr&gt;
+Eagle Version 6, Library Revision 2016a, 2016-03-10&lt;br&gt;
+&lt;HR&gt;
+Copyright: Würth Elektronik</description>
+<packages>
+<package name="694108301002">
+<description>&lt;b&gt;694108301002&lt;/b&gt;&lt;p&gt;WR-DC_DC Power Jack_Right Angled_THT Center Pin ?2.5_Plug ID ?2.05_Plug OD ?5.5</description>
+<wire x1="-0.19985" y1="-4.50001875" x2="-0.000003125" y2="-4.299821875" width="0.2" layer="21" curve="97.0981"/>
+<wire x1="0.00001875" y1="4.300140625" x2="-0.2" y2="4.5" width="0.2" layer="21" curve="97.0429"/>
+<wire x1="-0.2" y1="4.5" x2="-0.200178125" y2="4.4999875" width="0.2" layer="21" curve="0.054215"/>
+<wire x1="-14.5" y1="-4.5" x2="-0.2" y2="-4.5" width="0.2" layer="21"/>
+<wire x1="-14.5" y1="4.5" x2="-12.7" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-14.5" y1="-4.5" x2="-14.5" y2="-2.2" width="0.2" layer="21"/>
+<wire x1="0" y1="-4.3" x2="0" y2="4.3" width="0.2" layer="21"/>
+<wire x1="-8.3" y1="4.5" x2="-0.2" y2="4.5" width="0.2" layer="21"/>
+<wire x1="-14.5" y1="2.2" x2="-14.5" y2="4.5" width="0.2" layer="21"/>
+<pad name="2" x="-7.8" y="0" drill="0.000025" diameter="2.1844" shape="long" rot="R90"/>
+<pad name="1" x="-13.6" y="0" drill="0.000025" diameter="2.1844" shape="long" rot="R270"/>
+<pad name="3" x="-10.6" y="4.8" drill="0.000025" diameter="2.1844" shape="long"/>
+<text x="-14.6" y="6.5" size="2.032" layer="25" font="vector" ratio="13" rot="SR0">&gt;NAME</text>
+<text x="-14.6" y="-7.1484" size="2.032" layer="27" font="vector" ratio="13" rot="SR0">&gt;VALUE</text>
+<wire x1="-13.2" y1="-1.25" x2="-13.2" y2="1.25" width="0.1" layer="46"/>
+<wire x1="-14" y1="1.25" x2="-14" y2="-1.25" width="0.1" layer="46"/>
+<wire x1="-14" y1="1.25" x2="-13.2" y2="1.25" width="0.1" layer="46" curve="-180"/>
+<wire x1="-14" y1="-1.25" x2="-13.2" y2="-1.25" width="0.1" layer="46" curve="180"/>
+<wire x1="-9.35" y1="5.2" x2="-11.85" y2="5.2" width="0.1" layer="46"/>
+<wire x1="-11.85" y1="4.4" x2="-9.35" y2="4.4" width="0.1" layer="46"/>
+<wire x1="-11.85" y1="4.4" x2="-11.85" y2="5.2" width="0.1" layer="46" curve="-180"/>
+<wire x1="-9.35" y1="4.4" x2="-9.35" y2="5.2" width="0.1" layer="46" curve="180"/>
+<wire x1="-7.4" y1="-1.25" x2="-7.4" y2="1.25" width="0.1" layer="46"/>
+<wire x1="-8.2" y1="1.25" x2="-8.2" y2="-1.25" width="0.1" layer="46"/>
+<wire x1="-8.2" y1="1.25" x2="-7.4" y2="1.25" width="0.1" layer="46" curve="-180"/>
+<wire x1="-8.2" y1="-1.25" x2="-7.4" y2="-1.25" width="0.1" layer="46" curve="180"/>
+<text x="-0.465" y="-2.775" size="0.8128" layer="51" rot="R90">PCB Edge</text>
+<wire x1="0.25" y1="-4.75" x2="0.25" y2="6" width="0.127" layer="39"/>
+<wire x1="0.25" y1="6" x2="-14.75" y2="6" width="0.127" layer="39"/>
+<wire x1="-14.75" y1="6" x2="-14.75" y2="-4.75" width="0.127" layer="39"/>
+<wire x1="-14.75" y1="-4.75" x2="0.25" y2="-4.75" width="0.127" layer="39"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -779,12 +818,6 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="AC_IN" library="con-jack" package="SPC4078" value="5V AC" x="45.085" y="13.335" rot="R180">
-<attribute name="MF" value="" x="45.085" y="13.335" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="" x="45.085" y="13.335" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_FARNELL" value="unknown" x="45.085" y="13.335" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="45.085" y="13.335" size="1.778" layer="27" rot="R180" display="off"/>
-</element>
 <element name="JP1" library="jumper" package="JP2" value="RS232_TTL" x="36.195" y="6.35"/>
 <element name="U$2" library="diy-modules" package="WIRELESS-WIFI-ESP-01" value="WIRELESS-WIFI-ESP-01" x="24.765" y="13.335" rot="R180"/>
 <element name="D1" library="rectifier" package="MBS" value="B6S" x="45.085" y="7.62" rot="MR0"/>
@@ -842,6 +875,7 @@ design rules under a new name.</description>
 <element name="LH1500" library="LH1500" package="LH1500" value="" x="14.605" y="15.875" rot="MR0"/>
 <element name="X1" library="con-phoenix-508" package="MKDSN1,5/3-5,08" value="MKDSN1,5/3-5,08" x="3.175" y="15.875" rot="R90"/>
 <element name="U$1" library="LD1117" package="LD1117" value="LD1117" x="22.86" y="10.16"/>
+<element name="AC_IN" library="Wurth_Elektronik_Electromechanic_DC_Power_Jack_Connectors_rev16a_covek" package="694108301002" value="" x="55.72125" y="13.335"/>
 </elements>
 <signals>
 <signal name="N$6">
@@ -1007,15 +1041,17 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$1">
 <contactref element="D1" pad="AC1"/>
-<contactref element="AC_IN" pad="1"/>
-<wire x1="46.355" y1="10.62" x2="47.625" y2="11.7475" width="1.016" layer="16"/>
-<wire x1="47.625" y1="11.7475" x2="48.085" y2="13.335" width="1.016" layer="16"/>
+<wire x1="47.625" y1="11.7475" x2="46.355" y2="10.62" width="1.016" layer="16"/>
+<contactref element="AC_IN" pad="2"/>
+<wire x1="47.92125" y1="13.335" x2="47.625" y2="13.335" width="0.4064" layer="16"/>
+<wire x1="47.625" y1="13.335" x2="47.625" y2="11.7475" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$3">
-<contactref element="AC_IN" pad="3"/>
 <contactref element="D1" pad="AC2"/>
-<wire x1="43.815" y1="10.62" x2="42.2275" y2="11.7475" width="1.016" layer="16"/>
-<wire x1="42.2275" y1="11.7475" x2="42.085" y2="13.335" width="1.016" layer="16"/>
+<wire x1="42.2275" y1="11.7475" x2="43.815" y2="10.62" width="1.016" layer="16"/>
+<contactref element="AC_IN" pad="1"/>
+<wire x1="42.12125" y1="13.335" x2="42.2275" y2="13.335" width="0.4064" layer="16"/>
+<wire x1="42.2275" y1="13.335" x2="42.2275" y2="11.7475" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>
